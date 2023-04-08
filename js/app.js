@@ -11,6 +11,10 @@ function play(){
   boton.classList = "d-none"
   form.classList = "input-group mb-3"
   console.log(`El numero magico:${numeroAleateorio}`);
+  setTimeout(() =>{
+    caja.src= "./src/img/cajaAbierta.png"
+    caja.classList.add('scale');
+  },1100);
 }
 function comprobarNumero(e){
   e.preventDefault();
