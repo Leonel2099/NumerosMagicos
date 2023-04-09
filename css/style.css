@@ -11,19 +11,36 @@ body{
     border: 2px solid white;
     margin-top: 30px;
 }
+aside{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#cajaMisteriosa{
+    width: 500px;
+}
 #botonPlay{
-    width: 300px;
+    width: 900px;
+    height: 70px;
+    font-size: 40px;
 }
 #formulario{
-    width: 300px;
+    width: 900px;
+    height: 70px;
     margin: 0px;
+}
+input[type='text']{
+    font-size: 30px;
+}
+#formulario button{
+    font-size: 35px;
+    width: 130px;
 }
 .btnInstrucciones{
     padding: 0px;
     width: 120px;
     height: 120px;
 }
-.text-white{
+.textoInstrucciones{
     margin: 0px;
     font-size:xx-large;
     position: relative;
@@ -59,3 +76,144 @@ body{
         transform: rotate(1);
     }
 }
+@media screen and (max-width: 575px) {
+    .titulo{
+        color: white;
+        background-color: rgb(32, 31, 31);
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        border: 2px solid white;
+    }
+    h1{
+        font-size: 14px;
+    }
+    .textoInstrucciones{
+        margin: 0px;
+        font-size:small;
+        position: relative;
+        right: 19px;
+        top: -12px;
+    }
+    .btnInstrucciones{
+        padding: 0px;
+        width: 40px;
+        height: 40px;
+    }
+    .logoInstrucciones{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        right: 0px;
+        top: -5px;
+    }
+    #botonPlay{
+        width: 300px;
+        height: 35px;
+        font-size: large;
+    }
+    #formulario{
+        font-size: x-large;
+        width: 300px;
+        height: 30px;
+        margin: 0px;
+    }
+    input[type='text']{
+        font-size: 16px;
+    }
+    #formulario button{
+        font-size: 20px;
+        width: 80px;
+    }
+    
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    aside{
+        margin-top: 30px;
+    }
+    #cajaMisteriosa{
+        width: 650px;
+    }
+    .btnInstrucciones{
+        padding: 0px;
+        width: 80px;
+        height: 80px;
+    }
+    .logoInstrucciones{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        right: 0px;
+        top: -5px;
+    }
+    .textoInstrucciones{
+        margin: 0px;
+        font-size:20px;
+        position: relative;
+        right: 19px;
+        top: -12px;
+    }
+    #botonPlay{
+        width: 500px;
+        height: 60px;
+        font-size: x-large;
+    }
+    #formulario{
+        font-size: x-large;
+        width: 500px;
+        height: 60px;
+        margin: 0px;
+    }
+    input[type='text']{
+        font-size: 20px;
+    }
+    #formulario button{
+        font-size: x-large;
+        width: 120px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    aside{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    #cajaMisteriosa{
+        width: 680px;
+    }
+    .btnInstrucciones{
+        padding: 0px;
+        width: 70px;
+        height: 70px;
+    }
+    .logoInstrucciones{
+        width: 70px;
+        height: 70px;
+        position: relative;
+        right: 0px;
+        top: -5px;
+    }
+    .textoInstrucciones{
+        margin: 0px;
+        font-size:20px;
+        position: relative;
+        right: 19px;
+        top: -12px;
+    }
+    #botonPlay{
+        width: 800px;
+        height: 80px;
+        font-size: x-large;
+    }
+    #formulario{
+        width: 800px;
+        height: 80px;
+        margin: 0px;
+    }
+    input[type='text']{
+        font-size: 35px;
+    }
+    #formulario button{
+        font-size: x-large;
+        width: 120px;
+    }
+  }
