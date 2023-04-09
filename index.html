@@ -12,16 +12,74 @@
     <title>Numeros Magicos</title>
   </head>
   <body>
-    <main>
-      <section class="d-flex flex-column justify-content-center p-5" id="contenedorPadre">
-        <div class="text-center ">
-          <img src="./src/img/caja.png" class="w-75 " id="cajaMisteriosa" alt="caja misteriosa">
+    <main class="container-fluid">
+      <section class="titulo container-fluid py-3">
+        <h1 class="text-center">Numeros Magicos ✨✨</h1>
+      </section>
+      <section class="d-flex flex-column justify-content-center p-3" id="contenedorPadre">
+        <aside>
+          <button
+            type="button"
+            class="btn btnInstrucciones"
+            data-bs-toggle="modal"
+            data-bs-target="#modalInstruciones"
+          >
+            <img
+              src="./src/icons/instrucciones.png"
+              class="logoInstrucciones"
+              alt="logo instrucciones"
+            />
+            <p class="text-white">Instrucciones</p>
+          </button>
+        </aside>
+        <aside>
+          <div class="text-center">
+            <img
+              src="./src/img/caja.png"
+              class="w-75"
+              id="cajaMisteriosa"
+              alt="caja misteriosa"
+            />
+          </div>
+        </aside>
+        <aside class="d-flex justify-content-center">
+          <button class="btn btn-danger" id="botonPlay">Play</button>
+          <form class="input-group" id="formulario">
+            <input type="text" class="form-control" />
+            <button class="btn btn-success" type="submit">Enviar</button>
+          </form>
+        </aside>
+      </section>
+      <section
+        class="modal fade"
+        id="modalInstruciones"
+        tabindex="-1"
+        aria-labelledby="#modalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog text-bg-dark modal-xl">
+          <div class="modal-content bg-black">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalLabel">Instrucciones</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Presiona el boton de "Play" para comenzar el juego, se va crear
+                un numero aleatoreo del 1 al 10 ,tienes adivinar el numero.
+                Suerte...
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-danger" id="botonPlay" >Play</button>
-        <form class="input-group mb-3" id="formulario">
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          <button class="btn btn-success" type="submit">Enviar</button>
-        </form>
       </section>
     </main>
     <script src="js/bootstrap.min.js"></script>

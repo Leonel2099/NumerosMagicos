@@ -9,7 +9,7 @@ const numeroAleateorio = Math.floor(Math.random() * (10 - 1) + 1);
 function play(){
   caja.classList.add('rotacion');
   boton.classList = "d-none"
-  form.classList = "input-group mb-3"
+  form.classList = "input-group"
   console.log(`El numero magico:${numeroAleateorio}`);
   setTimeout(() =>{
     caja.src= "./src/img/cajaAbierta.png"
