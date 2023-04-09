@@ -1,21 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Juego - Numeros Magicos" />
-    <meta
-      name="keywords"
-      content="DOM, BOM , juego, Numero, Magico"
-    />
+    <meta name="keywords" content="DOM, BOM , juego, Numero, Magico" />
     <meta name="author" content="Choque Leonel Ezequiel" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Numeros Magicos</title>
-</head>
-<body>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <section class="titulo container-fluid py-3">
+        <h1 class="text-center">Numeros Magicos ✨✨</h1>
+      </section>
+      <section class="d-flex flex-column justify-content-center p-3 " id="contenedorPadre">
+        <aside>
+          <button
+            type="button"
+            class="btn btnInstrucciones"
+            data-bs-toggle="modal"
+            data-bs-target="#modalInstruciones"
+          >
+            <img
+              src="./src/icons/instrucciones.png"
+              class="logoInstrucciones"
+              alt="logo instrucciones"
+            />
+            <p class="text-white textoInstrucciones">Instrucciones</p>
+          </button>
+        </aside>
+        <aside class="text-center mt-sm-4">
+            <img
+              src="./src/img/caja.png"
+              class="img-fluid"
+              id="cajaMisteriosa"
+              alt="caja misteriosa"
+            />
+        </aside>
+        <aside class="d-flex justify-content-center my-3">
+          <button class="btn btn-danger" id="botonPlay">Play</button>
+          <form class="input-group" id="formulario">
+            <input type="text" class="form-control" />
+            <button class="btn btn-success" type="submit">Enviar</button>
+          </form>
+        </aside>
+      </section>
+      <section
+        class="modal fade"
+        id="modalInstruciones"
+        tabindex="-1"
+        aria-labelledby="#modalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog text-bg-dark modal-xl">
+          <div class="modal-content bg-black">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalLabel">Instrucciones</h1>
+            </div>
+            <div class="modal-body">
+              <p>
+                Presiona el boton de "Play" para comenzar el juego, se va crear
+                un numero aleatoreo del 1 al 10 ,tienes adivinar el numero.
+                Suerte...
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
